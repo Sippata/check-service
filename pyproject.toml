@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "tasktotest"
+version = "0.1.0"
+description = ""
+authors = ["Grigory <kanievgrigorij@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+django = "1.11"
+psycopg2 = "^2.8.4"
+djangorestframework = "^3.11.0"
+django-rq = "2.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
