@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'forfar',
-    'rest_framework'
+    'rest_framework',
+    'django_rq',
 ]
 
 MIDDLEWARE = [
@@ -78,9 +79,9 @@ WSGI_APPLICATION = 'tasktotest.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'greg',
+        'NAME': 'forfar',
         'USER': 'greg',
-        'PASSWORD': '1234',
+        'PASSWORD': 'some_pass',
         'HOST': 'localhost',
         'PORT': '5432',
     }
@@ -125,4 +126,22 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'media')
+
+# <project_dir>/media
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'TaskToTest', 'media')
+
+
+HTMLTOPDF_WORKER = {
+    'HOST': '127.0.0.1',
+    'PORT': 5546,
+}
+
+
+RQ_QUEUES = {
+    'default': {
+        'HOST': 'localhost',
+        'PORT': 6379,
+        'DB': 0,
+        'DEFAULT_TIMEOUT': 360,
+    },
+}

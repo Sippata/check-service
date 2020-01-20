@@ -1,0 +1,158 @@
+[
+  {
+    "model": "forfar.printer" ,
+    "pk": 9 ,
+    "fields": {
+      "name": "orange_12" ,
+      "api_key": "fduitTPgkNLoTEspGnbw" ,
+      "check_type": "client" ,
+      "point_id": 3
+    }
+  } ,
+  {
+    "model": "forfar.printer" ,
+    "pk": 10 ,
+    "fields": {
+      "name": "indigo_5" ,
+      "api_key": "QFrHgBiEtjIJPPMyDfzy" ,
+      "check_type": "client" ,
+      "point_id": 4
+    }
+  } ,
+  {
+    "model": "forfar.printer" ,
+    "pk": 11 ,
+    "fields": {
+      "name": "blue_1" ,
+      "api_key": "MGRoGUVUqGRtfNQGcLzv" ,
+      "check_type": "kitchen" ,
+      "point_id": 3
+    }
+  } ,
+  {
+    "model": "forfar.printer" ,
+    "pk": 12 ,
+    "fields": {
+      "name": "blue_2" ,
+      "api_key": "qbbukDMxLwsduAIElweS" ,
+      "check_type": "kitchen" ,
+      "point_id": 3
+    }
+  } ,
+  {
+    "model": "forfar.printer" ,
+    "pk": 13 ,
+    "fields": {
+      "name": "yellow_4" ,
+      "api_key": "LwetIXTptslfYgKGIzcK" ,
+      "check_type": "kitchen" ,
+      "point_id": 4
+    }
+  } ,
+  {
+    "model": "forfar.printer" ,
+    "pk": 14 ,
+    "fields": {
+      "name": "yellow_6" ,
+      "api_key": "kqioqwtFaDbQNGAYIwEv" ,
+      "check_type": "kitchen" ,
+      "point_id": 4
+    }
+  } ,
+  {
+    "model": "forfar.check" ,
+    "pk": 7 ,
+    "fields": {
+      "printer": 9 ,
+      "type": "client" ,
+      "order": {
+        "id": 123456 ,
+        "items": [
+          {
+            "name": "\u0412\u043a\u0443\u0441\u043d\u0430\u044f \u043f\u0438\u0446\u0446\u0430" ,
+            "quantity": 2 ,
+            "unit_price": 250
+          } ,
+          {
+            "name": "\u041d\u0435 \u043c\u0435\u043d\u0435\u0435 \u0432\u043a\u0443\u0441\u043d\u044b\u0435 \u0440\u043e\u043b\u043b\u044b" ,
+            "quantity": 1 ,
+            "unit_price": 280
+          }
+        ] ,
+        "price": 780 ,
+        "client": {
+          "name": "\u0418\u0432\u0430\u043d" ,
+          "phone": 9173332222
+        } ,
+        "address": "\u0433. \u0423\u0444\u0430, \u0443\u043b. \u041b\u0435\u043d\u0438\u043d\u0430, \u0434. 42" ,
+        "point_id": 3
+      } ,
+      "status": "new" ,
+      "pdf_file": ""
+    }
+  } ,
+  {
+    "model": "forfar.check" ,
+    "pk": 9 ,
+    "fields": {
+      "printer": 11 ,
+      "type": "kitchen" ,
+      "order": {
+        "id": 123456 ,
+        "items": [
+          {
+            "name": "\u0412\u043a\u0443\u0441\u043d\u0430\u044f \u043f\u0438\u0446\u0446\u0430" ,
+            "quantity": 2 ,
+            "unit_price": 250
+          } ,
+          {
+            "name": "\u041d\u0435 \u043c\u0435\u043d\u0435\u0435 \u0432\u043a\u0443\u0441\u043d\u044b\u0435 \u0440\u043e\u043b\u043b\u044b" ,
+            "quantity": 1 ,
+            "unit_price": 280
+          }
+        ] ,
+        "price": 780 ,
+        "client": {
+          "name": "\u0418\u0432\u0430\u043d" ,
+          "phone": 9173332222
+        } ,
+        "address": "\u0433. \u0423\u0444\u0430, \u0443\u043b. \u041b\u0435\u043d\u0438\u043d\u0430, \u0434. 42" ,
+        "point_id": 3
+      } ,
+      "status": "new" ,
+      "pdf_file": ""
+    }
+  } ,
+  {
+    "model": "forfar.check" ,
+    "pk": 10 ,
+    "fields": {
+      "printer": 12 ,
+      "type": "kitchen" ,
+      "order": {
+        "id": 123456 ,
+        "items": [
+          {
+            "name": "\u0412\u043a\u0443\u0441\u043d\u0430\u044f \u043f\u0438\u0446\u0446\u0430" ,
+            "quantity": 2 ,
+            "unit_price": 250
+          } ,
+          {
+            "name": "\u041d\u0435 \u043c\u0435\u043d\u0435\u0435 \u0432\u043a\u0443\u0441\u043d\u044b\u0435 \u0440\u043e\u043b\u043b\u044b" ,
+            "quantity": 1 ,
+            "unit_price": 280
+          }
+        ] ,
+        "price": 780 ,
+        "client": {
+          "name": "\u0418\u0432\u0430\u043d" ,
+          "phone": 9173332222
+        } ,
+        "address": "\u0433. \u0423\u0444\u0430, \u0443\u043b. \u041b\u0435\u043d\u0438\u043d\u0430, \u0434. 42" ,
+        "point_id": 3
+      } ,
+      "status": "new" ,
+      "pdf_file": ""
+    }
+  }
+]
